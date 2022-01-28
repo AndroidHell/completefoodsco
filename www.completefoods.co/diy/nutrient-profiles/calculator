@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en"><head><title>Nutrient Profile Calculator | Complete Foods</title><meta name="apple-mobile-web-app-title" content="Complete Foods"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" href="https://d109b3yimhrymz.cloudfront.net/favicon.ico"><link rel="canonical" href="https://www.completefoods.co/diy/nutrient-profiles/calculator"><link href="https://d109b3yimhrymz.cloudfront.net/diy/app2-5001241e.css" rel="stylesheet"><script src="https://d109b3yimhrymz.cloudfront.net/diy/app2-4bb3d901.js"></script></head><body><div id="fb-root"></div><div class="navbar"><div class="container"><div style="position: relative" class="navbar-header"><button type="button" data-toggle="collapse" data-target="#navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i></button><a href="/" class="navbar-brand">Complete Foods</a><div class="popover right previously hidden-xs"><div class="arrow"></div><div class="popover-content">formerly<img src="/diy/images/logo2x.png" alt="DIY Soylent"></div><a href="#" class="close">&times;</a></div></div><div id="navbar-collapse" class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right"><li><a href="/diy/recipes">Recipes<span class="b"></span></a></li><li class="active"><a href="/diy/nutrient-profiles">Nutrient Profiles<span class="b"></span></a></li><li class="hidden-sm"><a href="/diy/ingredients">Ingredients<span class="b"></span></a></li><li><a href="/diy/wiki">About<span class="b"></span></a></li><li><a href="/diy/signup">Sign Up<span class="b"></span></a></li><li><a href="/diy/login">Log In<span class="b"></span></a></li></ul></div></div><div class="l"><div class="l1"></div><div class="l2"></div><div class="l3"></div></div></div><div class="container"><link rel="stylesheet" href="/diy/vendor/bootstrap-slider/bootstrap-slider.css"><script src="/diy/vendor/bootstrap-slider/bootstrap-slider.js"></script><h1 class="text-center">Nutrient Profile Calculator</h1><form method="POST" action="/diy/nutrient-profiles/customize" class="form-horizontal create-custom-profile"><div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Age</label><div class="col-xs-6 col-sm-3"><input type="number" name="age" placeholder="24" min="0" max="120" class="form-control calc"></div></div><div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Height</label><div class="col-xs-6 col-sm-3"><select name="height" class="calc form-control"><option value="121.92">4' 0" / 122 cm</option><option value="124.46">4' 1" / 124 cm</option><option value="127">4' 2" / 127 cm</option><option value="129.54">4' 3" / 130 cm</option><option value="132.08">4' 4" / 132 cm</option><option value="134.62">4' 5" / 135 cm</option><option value="137.16">4' 6" / 137 cm</option><option value="139.7">4' 7" / 140 cm</option><option value="142.24">4' 8" / 142 cm</option><option value="144.78">4' 9" / 145 cm</option><option value="147.32">4' 10" / 147 cm</option><option value="149.86">4' 11" / 150 cm</option><option value="152.4">5' 0" / 152 cm</option><option value="154.94">5' 1" / 155 cm</option><option value="157.48">5' 2" / 157 cm</option><option value="160.02">5' 3" / 160 cm</option><option value="162.56">5' 4" / 163 cm</option><option value="165.1">5' 5" / 165 cm</option><option value="167.64">5' 6" / 168 cm</option><option value="170.18">5' 7" / 170 cm</option><option value="172.72">5' 8" / 173 cm</option><option value="175.26" selected="selected">5' 9" / 175 cm</option><option value="177.8">5' 10" / 178 cm</option><option value="180.34">5' 11" / 180 cm</option><option value="182.88">6' 0" / 183 cm</option><option value="185.42">6' 1" / 185 cm</option><option value="187.96">6' 2" / 188 cm</option><option value="190.5">6' 3" / 191 cm</option><option value="193.04">6' 4" / 193 cm</option><option value="195.58">6' 5" / 196 cm</option><option value="198.12">6' 6" / 198 cm</option><option value="200.66">6' 7" / 201 cm</option><option value="203.2">6' 8" / 203 cm</option><option value="205.74">6' 9" / 206 cm</option><option value="208.28">6' 10" / 208 cm</option><option value="210.82">6' 11" / 211 cm</option></select></div></div><div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Gender</label><div class="col-xs-6 col-sm-3"><select name="gender" class="calc form-control"><option value="m">Male</option><option value="f">Female</option></select></div></div><div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Weight</label><div class="col-xs-9 col-sm-4"><div class="row"><div class="col-xs-6"><input type="number" name="weight" placeholder="145" class="calc form-control"></div><div class="col-xs-6"><div data-toggle="buttons" class="btn-group btn-group-justified weight-measurement"><label class="btn btn-default active"><input type="radio" name="weightMeasurement" value="lbs" checked="checked">lbs</label><label class="btn btn-default"><input type="radio" name="weightMeasurement" value="kg">kg</label></div></div></div></div></div><div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Exercise</label><div class="col-xs-9 col-sm-4"><select name="exercise" class="calc form-control"><option value="1">(Basal Metabolic Rate)</option><option value="1.2" selected="selected">Rarely</option><option value="1.375">3 times per week</option><option value="1.4187">4 times per week</option><option value="1.4625">5 times per week</option><option value="1.6375">Every day</option></select></div></div><div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Diet</label><div class="col-xs-9 col-sm-4"><select name="fatloss" class="calc form-control"><option value="1">Maintain my weight</option><option value="0.85">Lose weight steadily</option><option value="0.75">Lose weight quickly</option><option value="1.15">Gain weight steadily</option><option value="1.25">Gain weight quickly</option></select></div></div><div class="form-group"><label style="border-top: 1px solid #ddd; padding-top: 15px; font-size: 1.4em; font-weight: normal" class="control-label col-xs-3 col-sm-offset-2">Results</label><div style="border-top: 1px solid #ddd; padding-top: 15px" class="col-xs-9 col-sm-4"><div style="display: none;" class="input-group custom-calories-results"><input id="cal-custom" type="text" class="form-control"><span class="input-group-addon">Calories per day</span></div><div style="font-size: 1.4em;" class="calories-results"><span id="cal">1,893</span> Calories per day</div></div></div><div class="form-group"><label class="control-label col-xs-3 col-sm-offset-2">Macro Ratios</label><div class="col-xs-9 col-sm-4"><select name="ratios" class="calc form-control"><option value="50-20-30">Standard</option><option value="60-20-20">High Carb</option><option value="40-30-30">Zone Diet</option><option value="30-15-55">Perfect Health Diet</option><option value="25-20-55">Low Carb</option><option value="5-20-75">Very Low Carb (Ketogenic)</option><option value="custom">Custom (drag sliders)</option><option value="customType">Custom (enter values)</option></select></div></div><div style="display: none;" class="form-group custom-ratios"><label class="control-label col-xs-3 col-sm-offset-2"></label><div class="col-xs-9 col-sm-4"><div class="row"><div class="col-xs-4"><input type="text" value="50" class="form-control custom-carb text-center"></div><div class="col-xs-4"><input type="text" value="25" class="form-control custom-protein text-center"></div><div class="col-xs-4"><input type="text" value="25" class="form-control custom-fat text-center"></div></div></div></div><div class="form-group"><div class="col-xs-12 col-sm-4 col-sm-offset-5"><div style="margin-bottom: 15px; padding: 0 10px;" class="slider-container"><input id="slider-range" type="text" style="width: 100%;"></div><table style="width: 100%; margin-bottom: 10px;"><tr><th style="width: 33%" class="text-center">Carbohydrate</th><th style="width: 33%" class="text-center">Protein</th><th style="width: 33%" class="text-center">Fat</th></tr><tr><td class="text-center"><span id="carb">50%</span></td><td class="text-center"><span id="protein">25%</span></td><td class="text-center"><span id="fat">25%</span></td></tr><tr><td class="text-center"><span id="carb_cal"></span></td><td class="text-center"><span id="protein_cal"></span></td><td class="text-center"><span id="fat_cal"></span></td></tr><tr><td class="text-center"><span id="carb_g"></span></td><td class="text-center"><span id="protein_g"></span></td><td class="text-center"><span id="fat_g"></span></td></tr></table></div></div><div class="form-group"><div class="col-xs-12 col-md-8 col-md-offset-2 text-center">Please <a href="/diy/login">login</a> or <a href="/diy/signup">signup</a> to create a personalized nutrient profile based on these values. <br>Then you can customise a recipe to your exact needs!</div></div><script>var saveTimeout;
+$(function() {
+
+  var weightMeasurement = 'lbs',
+      sliderMin = 50, sliderMax = 75;
+
+  function updateRatios(dontUpdateSlider) {
+    var carb = sliderMin,
+        protein = (sliderMax - sliderMin),
+        fat = (100 - sliderMax),
+        calories = Number($('#cal-custom').val());
+
+    if ($('select[name="ratios"]').val() == 'customType') {
+      carb = Number($('.custom-carb').val());
+      protein = Number($('.custom-protein').val());
+      fat = Number($('.custom-fat').val());
+      sliderMin = carb;
+      sliderMax = carb + protein;
+    }
+    else {
+      $('.custom-carb').val(carb);
+      $('.custom-protein').val(protein);
+      $('.custom-fat').val(fat);
+    }
+
+    if (!dontUpdateSlider) {
+      $('#slider-range').slider('setValue', [sliderMin, sliderMax]);
+    }
+
+    $('#carb').html(carb + '%');
+    $('#protein').html(protein + '%');
+    $('#fat').html(fat + '%');
+
+    $('#carb_cal').html(Math.round(carb * calories / 100) + ' cals');
+    $('#protein_cal').html(Math.round(protein * calories / 100) + ' cals');
+    $('#fat_cal').html(Math.round(fat * calories / 100) + ' cals');
+
+    var carbG = Math.round(carb * calories / 100 / 4);
+    var proteinG = Math.round(protein * calories / 100 / 4);
+    var fatG = Math.round(fat * calories / 100 / 9);
+
+    $('#carb_g').html(carbG + ' g');
+    $('#protein_g').html(proteinG + ' g');
+    $('#fat_g').html(fatG + ' g');
+
+    $('.create-custom-profile input[name="nutrientProfile[calories]"]').val(calories);
+    $('.create-custom-profile input[name="nutrientProfile[carbs]"]').val(carbG);
+    $('.create-custom-profile input[name="nutrientProfile[protein]"]').val(proteinG);
+    $('.create-custom-profile input[name="nutrientProfile[fat]"]').val(fatG);
+
+    saveFormValues();
+  }
+
+  $("#slider-range").slider({
+      min: 0,
+      max: 100,
+      step: 1,
+      value: [50,75],
+      tooltip: 'hide'
+  });
+  $("#slider-range").on('slide', function(e) {
+      sliderMin = e.value[0];
+      sliderMax = e.value[1];
+      updateRatios(true);
+  })
+  $("#slider-range").on('slideStart', function(e) {
+      $('select[name=ratios] option[value=custom]').prop('selected', true);
+  })
+
+  function saveFormValues() {
+    var formValues = {
+      age: $('input[name=age]').val(),
+      height: $('select[name=height]').val(),
+      gender: $('select[name=gender]').val(),
+      weight: $('input[name=weight]').val(),
+      exercise: $('select[name=exercise]').val(),
+      fatLoss: $('select[name=fatloss]').val(),
+      weightMeasurement: weightMeasurement,
+      ratios: $('select[name=ratios]').val(),
+      sliderMin: sliderMin,
+      sliderMax: sliderMax
+    }
+
+    if (window.localStorage) {
+      window.localStorage.nutrientCalc = JSON.stringify(formValues);
+    }
+
+    if (false) {
+      clearTimeout(saveTimeout);
+      saveTimeout = setTimeout(function() {
+        $.ajax({
+          method: 'POST', url: '/diy/account/profile',
+          data: { _method: 'PUT', bodyData: formValues }
+        });
+      }, 3000);
+    }
+
+    return formValues;
+  }
+
+  function recalc() {
+
+    var formValues = saveFormValues();
+
+    var age = Number(formValues.age) || 24,
+        height = Number(formValues.height),
+        gender = formValues.gender,
+        weightLbs = (Number(formValues.weight) || 145),
+        weight = weightLbs * (weightMeasurement == 'lbs' ? 0.453592 : 1),
+        exercise = Number(formValues.exercise),
+        fatLoss = Number(formValues.fatLoss),
+        lowest = 8 * weightLbs;
+
+    var calories = (10 * weight) + (6.25 * height) - (5 * age);
+    if (gender == 'm') {
+      calories += 5;
+    }
+    else {
+      calories -= 161;
+    }
+    calories = Math.round(calories * exercise * fatLoss);
+    calories = calories < lowest ? lowest : calories;
+
+    //- console.log(age, height, gender, weight, exercise, fatLoss, calories);
+
+    $('#cal').html(calories);
+    $('#cal-custom').val(calories);
+    updateRatios();
+  }
+  $('.calc').on('change', recalc);
+  $('.calc').on('keyup', recalc);
+
+  if (window.localStorage && window.localStorage.nutrientCalc) {
+    try {
+      var formValues = JSON.parse(window.localStorage.nutrientCalc);
+      if (formValues.age) $('input[name=age]').val(formValues.age);
+      if (formValues.height) $('select[name=height]').val(formValues.height);
+      if (formValues.gender) $('select[name=gender]').val(formValues.gender);
+      if (formValues.weight) $('input[name=weight]').val(formValues.weight);
+      if (formValues.exercise) $('select[name=exercise]').val(formValues.exercise);
+      if (formValues.fatLoss) $('select[name=fatloss]').val(formValues.fatLoss);
+      if (formValues.weightMeasurement) {
+        $('[name=weightMeasurement]').closest('.btn').removeClass('active');
+        $('[name=weightMeasurement][value=' + formValues.weightMeasurement + ']').closest('.btn').addClass('active');
+      }
+      weightMeasurement = formValues.weightMeasurement;
+      if (formValues.sliderMin) {
+        sliderMin = formValues.sliderMin;
+        $('.custom-carb').val(sliderMin);
+      }
+      if (formValues.sliderMax) {
+        sliderMax = formValues.sliderMax;
+        $('.custom-protein').val(Number(sliderMax) - Number(sliderMin));
+        $('.custom-fat').val(100 - Number(sliderMax));
+      }
+      if (formValues.ratios) {
+        $('select[name="ratios"]').val(formValues.ratios);
+      }
+    } catch(e) {}
+  }
+
+  function updateRatioSelect() {
+    var val = $('select[name=ratios]').val(),
+        vals = val.split('-');
+
+    if (val == 'custom') {
+      $('.custom-ratios, .custom-calories-results').hide();
+      $('.slider, .calories-results').show();
+    }
+    else if (val == 'customType') {
+      $('.custom-ratios, .custom-calories-results').show();
+      $('.slider, .calories-results').hide();
+    }
+    if (vals[0] && vals[1]) {
+      $('.custom-ratios, .custom-calories-results').hide();
+      $('.slider, .calories-results').show();
+      sliderMin = Number(vals[0]);
+      sliderMax = sliderMin + Number(vals[1]);
+      updateRatios();
+    }
+  }
+  $('select[name=ratios]').change(updateRatioSelect);
+
+  recalc();
+  updateRatioSelect();
+
+  $(document).on('click', '.weight-measurement .btn', function() {
+    weightMeasurement = $(this).find('input').val();
+    recalc();
+  });
+
+  $(document).on('keyup', '#cal-custom, .custom-carb, .custom-protein, .custom-fat', function() {
+    updateRatios();
+  });
+});
+</script></form><div class="row"><div style="margin-top: 30px" class="col-xs-12 col-md-8 col-md-offset-2"><h4>How does this work?</h4><p>First we calculate the Basal Metabolic Rate (BMR)*:</p><p><b style="display: inline-block; width: 5em">Men:</b>  10 x weight (kg) + 6.25 x height (cm) - 5 x age (y) + 5</p><p><b style="display: inline-block; width: 5em">Women:</b> 10 x weight (kg) + 6.25 x height (cm) - 5 x age (y) - 161.</p><p>Next we multiply base rate by between 1.2 and 1.6 depending on exercise level.</p><p>Finaly we reduce by 15% for Fat Loss, or 25% for Fast Fat Loss. The 'absolute lowest' number of calories is capped at 8 calories per pound of body weight.</p><p>Gain weight steadily increases by 15%, Gain weight quickly increases by 25%.</p><p class="muted">* The formula, proposed by <a href="http://ajcn.nutrition.org/content/51/2/241.abstract">M.D. Mifflin and S.T. St Jeor</a>, was found to be the most accurate by the American Dietetic Association in their <a href="http://andevidencelibrary.com/files/Docs/Frankenfield_et_al_2005%5B1%5D.pdf">2005 comparison</a>.</p><hr><div id="disqus_thread"></div><script>var disqus_shortname = 'makesoylent';
+var disqus_identifier = 'nutrient-profile-calculator';
+var disableDisqus = false;
+var disqusLoaded = false;
+var disqus_config = function() {
+    this.page.remote_auth_s3 = '';
+    this.page.api_key = 'W8kB4AKjX85JuBR68Ip4tXAfTuR4Huwf7xFBCojmWrxwArc4eK5oMV6wSCG9xS2Y';
+    this.sso = {
+        name:   "Complete Foods",
+        // button:  "https://www.completefoods.co/diy/images/disqus-sso-login.png",
+        url:     "https://https://www.completefoods.co/login?sso=1",
+        logout:  "https://https://www.completefoods.co/logout",
+        width:   "400",
+        height:  "260"
+    };
+    this.callbacks.onNewComment = [function() {
+        if (typeof updateDisqusCommentCount !== "undefined") updateDisqusCommentCount();
+    }];
+}
+var loadDisqus = function() {
+    if (disqusLoaded) return;
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    document.getElementsByTagName('head')[0].appendChild(dsq);
+    disqusLoaded = true;
+}
+$(function() {
+    if (!disableDisqus) loadDisqus();
+});</script></div></div></div><div style="margin-top: 50px" class="l"><div class="l1"></div><div class="l2"></div><div class="l3"></div></div><div class="container"><div class="footer"><div class="col-md-3 logo"><span class="pm-logo"><span class="c">complete</span>foods</span></div><div class="col-md-6 text-center"><a href="#" data-tab="general" class="feedback-footer">Contact Us</a><span class="pipe"></span><a href="/diy/nutrient-profiles/calculator">Nutrient Calculator</a><span class="pipe"></span><a href="/diy/terms">Terms &amp; Privacy</a></div><div class="col-md-3 social-icons"><a href="https://twitter.com/completefoods" class="tw"><i class="fa fa-twitter"></i></a><a href="https://facebook.com/completefoodsco" class="fb"><i class="fa fa-facebook"></i></a></div></div></div><a href="#" class="feedback hidden-xs">Feedback</a><div style="display: none" class="modal modal-feedback fade"><div class="modal-dialog"><div class="modal-content"><div style="display: none;" class="loading"><i style="font-size: 100px" class="fa fa-spinner fa-spin"></i></div><div class="modal-header"><a data-dismiss="modal" class="close">&times;</a><h4 class="modal-title">Submit Feedback</h4></div><div class="modal-body"></div><div class="modal-footer"><button data-dismiss="modal" class="btn btn-default">Cancel</button><button type="submit" class="btn btn-primary submit-feedback">Submit Feedback</button></div></div></div></div><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-42369796-1', 'www.completefoods.co');
+ga('set', '&uid', null);
+ga('send', 'pageview');</script></body></html>

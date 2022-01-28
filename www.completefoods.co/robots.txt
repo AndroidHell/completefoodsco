@@ -1,0 +1,41 @@
+User-agent: *
+Disallow: /diy/*nutrient-profile-options$
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: ChangeDetection
+Disallow: /
+
+User-agent: Cliqzbot
+Disallow: /
+
+User-agent: DAUM
+Disallow: /
+
+User-agent: DeuSu
+Disallow: /
+
+User-agent: seoscanners.net
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
